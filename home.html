@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script|Droid Serif">
+
+	<!-- Custom styles for this template -->
+  	<link href="style.css" rel="stylesheet" />
+
+  	<script src="https://kit.fontawesome.com/451c2f4cc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header style="font-size: 16px;">
+		<nav class="navbar navbar-expand-sm navbar-white bg-white">
+	  		<div class="container">
+	    		<a class="navbar-brand text-dark" style="font-family: 'Dancing Script'; font-size: 32px;" href="#">
+	    			<img src="box.jpg" width="80px" height="80px">
+	    			<span class="align-middle fw-bold">In A Box</span>
+	    		</a>
+	    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shortcut">
+            		<i class="fa-solid fa-bars"></i>
+          		</button>
+          		
+	    		<div class="collapse navbar-collapse justify-content-center" id="shortcut">
+	     			<ul class="navbar-nav" style="font-family: Droid Serif;">
+	        			<li class="nav-item fw-bold me-4 active">
+	          				<a class="nav-link text-dark" href="#">HOME</a>
+	        			</li>
+	        			<li class="nav-item dropdown fw-bold me-2">
+	          				<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+	            				SERVICES AND PRODUCTS OFFERED
+	          				</a>
+	          				<ul class="dropdown-menu">
+					            <li><a class="dropdown-item" href="recipe.html">Recipe Guides</a></li>
+					            <li><a class="dropdown-item" href="bake_at_homeset.html">Bake At Home Set</a></li>
+					            <li><a class="dropdown-item" href="ingredients.html">Ingridents</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li>
+            						<a class="dropdown-item" href="#">
+              							Other Items <!--&raquo; -->
+            						</a>
+            						<!--
+						            <ul class="dropdown-menu dropdown-submenu">
+						            	<li><a class="dropdown-item" href="mealPlanner.html">Meal Planners</a>
+						              	</li>
+						              	<li><a class="dropdown-item" href="nutrition.html">Nutritional Info App</a>
+						              	</li>
+						              	<li><a class="dropdown-item" href="weekly.html">Weekly Recipe Choices</a>
+						              	</li>
+						              	<li><a class="dropdown-item" href="gift.html">Gifts</a>
+						              	</li>
+						            </ul>
+						        	-->
+          						</li>
+          						<li><hr class="dropdown-divider"></li>
+          						<li><a class="dropdown-item" href="mealPlanner.html">Meal Planners</a></li>
+						        <li><a class="dropdown-item" href="nutrition.html">Nutritional Info App</a></li>
+						        <li><a class="dropdown-item" href="weekly.html">Weekly Recipe Choices</a>
+						        </li>
+						        <li><a class="dropdown-item" href="gift.html">Gifts</a>
+						        </li>
+					        </ul>
+	        			</li>
+				        <li class="nav-item fw-bold">
+				          <a class="nav-link text-dark" href="packages.html" role="button">PACKAGES OFFERED</a>
+				        </li>
+				        <li class="nav-item me-4 fw-bold">
+				          <a class="nav-link text-dark" href="#footer" role="button">CONTACT US</a>
+				        </li>
+	      			</ul>
+	    		</div>
+	    		
+	    		<div class="text-end" style="font-family: Droid Serif;">
+			        <button type="button" class="btn btn-outline-dark me-2" data-bs-toggle="modal" data-bs-target="#form" >Login</button>
+			        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form">Sign-up</button>
+			    </div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+				    <div class="modal-dialog d-flex justify-content-center">
+				        <div class="modal-content w-75">
+				            <div class="modal-header">
+				                <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
+				                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				            </div>
+				            <div class="modal-body p-4">
+				                <form>
+				                    <!-- Name input -->
+				                    <div class="form-outline mb-4">
+				                        <input type="text" id="name2" class="form-control" />
+				                        <label class="form-label" for="name2">Name</label>
+				                    </div>
+
+				                    <!-- Email input -->
+				                    <div class="form-outline mb-4">
+				                        <input type="email" id="email2" class="form-control" />
+				                        <label class="form-label" for="email2">Email address</label>
+				                    </div>
+
+				                    <!-- password input -->
+				                    <div class="form-outline mb-4">
+				                        <input type="password" id="password2" class="form-control" />
+				                        <label class="form-label" for="password2">Password</label>
+				                    </div>
+
+				                    <!-- Submit button -->
+				                    <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+				                </form>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<!-- Modal -->
+	  		</div>
+		</nav>
+	</header>
+
+	<section class="about_section layout_padding" style="background-color: #5D99B0; padding-bottom: 67px;">
+		<div class="container  ">
+	    	<div class="row">
+	        	<div class="col-md-6">
+	          		<div class="img-box pt-5 mt-3 mb-0 pb-0">
+	            		<img src="Main.jpg" alt="">
+	          		</div>
+	        	</div>
+	        	<div class="col-md-6 text-white">
+	        		<div id="demo" class="carousel slide" data-bs-ride="carousel">
+	     
+			  			<div class="carousel-inner">
+			  				<div class="carousel-item active">
+			  					<div class="detail-box">
+					            	<div class="heading_container">
+					                	<h2>
+					                		What In A Box is
+					                	</h2>
+				            		</div>
+						            <p style="font-family: cursive;">
+						            	In A Box is a company that is selling healthy salad. 
+										We value our customer's health and well-being. That's why we always try 
+										to keep our food cold and fresh. You can order our food from anywhere in 
+										the world just on a finger tip. In a minute, our prodcuts will be knocking 
+										on your door.
+						            </p>
+			            		</div>
+				    		</div>
+					    	<div class="carousel-item">
+				  				<div class="detail-box">
+						            <div class="heading_container">
+						                <h2>
+						                	About Us
+						                </h2>
+					            	</div>
+						            <p style="font-family: cursive;">
+						           		Our company is located on UK. We distribute our products across the world. 
+										We always value our customer's health and well-being. You can order our food 
+										from anywhere in the world just on a finger tip. In a minute, our prodcuts will 
+										be knocking on your door.
+						            </p>
+				            	</div>
+					    	</div>
+					    	<div class="carousel-item">
+				  				<div class="detail-box">
+						            <div class="heading_container">
+						                <h2>
+						                	About Salad
+						                </h2>
+					            	</div>
+						            <p style="font-family: cursive;">
+						            	A salad is a dish consisting of mixed, mostly natural ingredients with 
+										at least one raw ingredient. They are often dressed, and typically served
+										 at room temperature or chilled, though some can be served warm. Pieces of 
+										 vegetables, fruits, meat, eggs, or grains mixed with a sauce.           
+						          	</p>
+				            	</div>
+					    	</div>
+			  			</div>
+			  			<br>
+					    <ol class="carousel-indicators">
+						    <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+						    <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+						    <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+					    </ol>
+					</div>
+	        	</div>
+	      	</div>
+	    </div>
+	  </section>
+
+	  <section class="pb-5">
+	  	<div class="container">
+	  		<div class="heading_container heading_center psudo_white_primary my-5">
+        		<h2>
+          			What Our Customers Say
+        		</h2>
+      		</div>
+      
+      		<div class="row ">
+      			<div class="col-lg-4" style="font-family: cursive;">
+        			<img src="customers/polar2.jpg" style="width: 150px; height: 150px;border-radius: 150px;">
+
+        			<h2>Polar</h2>
+        			<p><span class="text-warning fw-bold"> " </span>
+						I have tried ordering many salads from different company. 
+						Of all them, I really like In A Box comapny. Their services and foods are amazning.
+						<span class="text-warning fw-bold"> " </span></p>
+      			</div>
+
+      			<div class="col-lg-4" style="font-family: cursive;">
+        			<img src="customers/william1.jpg" style="width: 150px; height: 150px;border-radius: 150px;">
+
+        			<h2>William</h2>
+        			<p><span class="text-warning fw-bold"> " </span>
+						I have been the customer of In A Box for many years. 
+						I have been satisfied along the way. I strongly recomment this food company.
+						<span class="text-warning fw-bold"> " </span></p>
+     			</div>
+
+      			<div class="col-lg-4" style="font-family: cursive;">
+        			<img src="customers/blake1.jpg" style="width: 150px; height: 150px;border-radius: 150px;">
+
+        			<h2>Blake</h2>
+        			<p><span class="text-warning fw-bold"> " </span>
+						I can say that I like salad foods because of In A Box company. 
+						Their foods are tasty and fresh. At least once in a lifetime, 
+						you should try one of the foods in this company.
+						<span class="text-warning fw-bold"> " </span></p>
+      			</div>
+    		</div>
+  		</div>	
+	  </section>
+
+	    <section class="about_section py-5" style="background-color: #ebebeb;">
+    		<div class="container">
+				<div class="row">
+        
+    				<div class="col-md-6">
+          				<div class="detail-box">
+            				<div class="heading_container">
+				                <p class="text-dark h2" style="font-family: cursive;">
+				                	We Are In A Box
+				                </p>
+            				</div>
+            				<p class="text-dark" style="font-family: cursive;">
+				            	In A Box is a company that is selling healthy salad. 
+								We value our customer's health and well-being. That's why we 
+								always try to keep our food cold and fresh. You can order our food 
+								from anywhere in the world just on a finger tip. In a minute, our prodcuts 
+								will be knocking on your door. They are often dressed, and typically served 
+								at room temperature or chilled, though some can be served warm. Pieces of 
+								vegetables, fruits, meat, eggs, or grains mixed with a sauce.
+            				</p>
+            				<a href="">
+             					Getting Started
+            				</a>
+          				</div>
+        			</div>
+        			<div class="col-md-6 ">
+          				<div class="img-box">
+            				<img src="saladReal.webp" alt="">
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+  		</section>
+
+	  <footer class="bg-dark text-center text-white" >
+	  	<!-- Grid container -->
+	  	<div class="container p-4 pb-0">
+	  		<!-- Section: Social media -->
+  			<section class="d-flex justify-content-center justify-content-lg-between p-4 pt-2 border-bottom">
+    			<!-- Left -->
+    			<div class="me-5 d-none d-lg-block">
+      				<span>Get connected with us on social networks:</span>
+    			</div>
+
+    			<!-- Right -->
+    			<div>
+      				<a href="https://www.facebook.com" class="text-white me-4" >
+        				<i class="fab fa-facebook-f"></i>
+      				</a>
+      				<a href="https://twitter.com" class="text-white me-4">
+        				<i class="fab fa-twitter"></i>
+      				</a>
+			        <a href="https://www.google.com" class="text-white me-4">
+			        	<i class="fab fa-google"></i>
+			      	</a>
+			      	<a href="https://www.instagram.com" class="text-white me-4">
+			        	<i class="fa-brands fa-instagram"></i>
+			      	</a>
+    			</div>
+  			</section>
+	    
+  			<section>
+    			<div class="container text-center text-md-start mt-5">
+      				<!-- Grid row -->
+      				<div class="row mt-3">
+        			<!-- Grid column -->
+        				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          					<!-- Content -->
+          					<h6 class="text-uppercase fw-bold mb-4">
+            					<i class="fa-solid fa-people-carry-box me-3 text-white"></i>
+            					In A Box
+          					</h6>
+          					<p>
+            					In A Box is recognised by FDA (Food And Drug Administration) officially.<br>
+            					So, you'd better be careful.
+          					</p>
+        				</div>
+        				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          					<!-- Links -->
+				        	<h6 class="text-uppercase fw-bold mb-4">
+				            	Products
+				        	</h6>
+          					<p>
+            					<a href="#!" class="text-reset">Green Salads</a>
+          					</p>
+					        <p>
+					        	<a href="#!" class="text-reset">Vegetable Salads</a>
+					        </p>
+          					<p>
+            					<a href="#!" class="text-reset">Fruit Salads</a>
+          					</p>
+          					<p>
+            					<a href="#!" class="text-reset">Meat Salads</a>
+          					</p>
+        				</div>
+
+        				<!-- Grid column -->
+        				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          					<!-- Links -->
+          					<h6 class="text-uppercase fw-bold mb-4">
+           						Others
+          					</h6>
+          					<p>
+            					<a href="#!" class="text-reset">Pricing</a>
+          					</p>
+          					<p>
+            					<a href="#!" class="text-reset">Settings</a>
+          					</p>
+          					<p>
+            					<a href="#!" class="text-reset">Orders</a>
+          					</p>
+          					<p>
+            					<a href="#!" class="text-reset">Help</a>
+          					</p>
+        				</div>
+
+        				<!-- Grid column -->
+        				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="footer">
+          					<!-- Links -->
+				            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+				            <p>
+				            	<i class="fas fa-home me-3 text-white"></i> 
+				            	Sein Pann, SP 268, MM
+				            </p>
+          					<p>
+            					<i class="fas fa-envelope me-3 text-white"></i>
+            					inabox@gmail.com
+          					</p>
+          					<p>
+          						<i class="fas fa-phone me-3 text-white"></i> 
+          						+ 09 44 397 777 55
+          					</p>
+          					<p>
+        				</div>
+      				</div>
+    			</div>
+  			</section>
+	  	</div>
+	  	<!-- Copyright -->
+	  	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	    	© 2022 Copyright: InABox.com
+	  	</div>
+	  </footer>
+</body>
+</html>
